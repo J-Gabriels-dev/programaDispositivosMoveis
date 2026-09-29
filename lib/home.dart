@@ -10,7 +10,7 @@ class MyHomePage extends StatelessWidget {
       body: Container(color: Colors.blueGrey),
       floatingActionButton: OutlinedButton(
         onPressed: () => {},
-        child: Icon(Icons.add, color: Colors.black26),
+        child: Icon(Icons.add, color: Colors.amber),
       ),
     );
   }

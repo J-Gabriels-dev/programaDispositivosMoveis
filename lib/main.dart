@@ -1,4 +1,4 @@
-import 'package:aula_01_flutter/home.dart';
+import 'package:aula_01_flutter/home2.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: .fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const MyHomePage(title: 'Gabriel sousa Flamengo'),
+      home: const MyHomePage2(),
     );
   }
 }
