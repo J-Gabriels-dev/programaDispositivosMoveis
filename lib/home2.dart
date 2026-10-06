@@ -6,19 +6,54 @@ class MyHomePage2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("")),
+      appBar: AppBar(title: Text("Minha Logo"), backgroundColor: Colors.teal),
+
       body: Padding(
-        padding: const EdgeInsets.all(20.0),
+        padding: EdgeInsets.all(150.0),
+
         child: Column(
           children: [
             Card(
-              child: Column(
+              child: Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Text("Aula de hoje", style: TextStyle(fontSize: 18)),
-                  Text("Widget e Composição", style: TextStyle(fontSize: 18)),
+
+                  SizedBox(height: 30),
+                ],
+              ),
+            ),
+
+            Card(
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  SizedBox(
+                    width: 180,
+                    height: 90,
+                    child: Card(
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(
+                            "Widget e Composição",
+                            style: TextStyle(fontSize: 20),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+
+            Card(
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
                   Text("Aula de ontem", style: TextStyle(fontSize: 18)),
-                  ElevatedButton(onPressed: () {}, child: Text("Clique")),
+
+                  SizedBox(height: 120),
                 ],
               ),
             ),
@@ -35,6 +70,26 @@ class MyHomePage2 extends StatelessWidget {
                       children: [Icon(Icons.book), Text("Aulas"), Text("12")],
                     ),
                   ),
+                ),
+
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Card(
+                      child: SizedBox(
+                        height: 120,
+                        width: 120,
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Icon(Icons.add_a_photo),
+                            Text("Turmas"),
+                            Text("12"),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
               ],
             ),
