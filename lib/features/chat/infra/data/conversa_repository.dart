@@ -2,7 +2,7 @@ import 'package:aula_01_flutter/features/chat/domain/entities/conversa.dart';
 
 class ConversaRepository {
   // BD
-  List<Conversa> conversas = [
+  final List<Conversa> conversas = [
     Conversa(
       contato: 'Ewerton Costa',
       sigla: 'EC',
@@ -18,4 +18,5 @@ class ConversaRepository {
       naoLidas: 10,
     ),
   ];
+  void add(Conversa conversa) => conversas.add(conversa);
 }
