@@ -6,5 +6,5 @@ class ConversaListInitializer extends ConversaListEvent {}
 
 class ConversaListDuplicaConversa extends ConversaListEvent {
   final Conversa conversa;
-  ConversaListDuplicaConversa({required this.conversa})
+  ConversaListDuplicaConversa({required this.conversa});
 }
