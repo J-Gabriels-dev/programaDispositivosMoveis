@@ -1,9 +1,12 @@
 
 
-import 'dart:nativewrappers/_internal/vm/lib/ffi_native_type_patch.dart';
-
 class Product  {
-   int id;
+   int? id;
    String nome;
    String categoria;
-}    
+   double preco;
+   String avaliacao;
+   String urLimagem;
+
+   Product({this.id, required this.nome,required this.categoria,required this.preco,required this.avaliacao,required this.urLimagem});
+}

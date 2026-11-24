@@ -1,5 +1,4 @@
-import 'package:aula_01_flutter/features/chat/domain/entities/conversa.dart';
-import 'package:aula_01_flutter/features/chat/infra/data/conversa_repository.dart';
+
 import 'package:aula_01_flutter/features/chat/presentation/bloc/conversa_list_bloc.dart';
 import 'package:aula_01_flutter/features/chat/presentation/bloc/conversa_list_event.dart';
 import 'package:aula_01_flutter/features/chat/presentation/bloc/conversa_list_state.dart';
